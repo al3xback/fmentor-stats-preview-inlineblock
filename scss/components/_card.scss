@@ -73,15 +73,20 @@
 	letter-spacing: func.em(1, var.$font-size-primary);
 }
 
-@media (min-width: 65em) {
+@media (min-width: 74.5em) {
 	.card {
 		max-width: func.em(1110, var.$font-size-primary);
+	}
+
+	.card__inner {
+		font-size: 0;
 	}
 
 	.card__image,
 	.card__content {
 		display: inline-block;
-		max-width: 50%;
+		width: 50%;
+		font-size: 0.9375rem;
 		vertical-align: top;
 	}
 
@@ -110,14 +115,13 @@
 	}
 
 	.card__stats-list {
-		margin: 0 func.rem(-10);
+		margin: func.rem(-10) func.rem(-10) 0;
 		font-size: 0;
 	}
 
 	.card__stats-list-item {
 		display: inline-block;
 		width: 33.33%;
-		min-width: func.em(112, 12);
 		padding: func.rem(10);
 		font-size: 0.8rem;
 		vertical-align: top;
